@@ -426,3 +426,182 @@ nav {
     color: white;
     border: none;
 }
+
+/* ABOUT THE TEAM */
+#mision-vision-valores {
+    padding: 40px 20px;
+    background: linear-gradient(45deg, #bbdefb, #64b5f6, #2196f3, #1976d2, #0d47a1);
+    text-align: center;
+}
+
+.mvvContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mvvTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.mvvSubtitle {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.mvvVideosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+.mvvVideosContainer iframe {
+  width: 400px;
+  height: 225px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.mvvGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.mvvCard {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mvvIconContainer {
+    width: 60px;
+    height: 60px;
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mvvCard h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+.mvvCard p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.mvvIcon {
+    width: 40px; 
+    height: 40px;
+}
+.misionVisionValores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.misionVisionValores .item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.misionVisionValores .item h3 {
+    color: #0277bd;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.misionVisionValores .item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.misionVisionValores .item ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.misionVisionValores .item li {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* NUESTRO EQUIPO */
+#nuestro-equipo {
+  padding: 50px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
+.teamTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a0a0a;
+  margin-bottom: 40px;
+}
+
+.teamMembers {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 220px; 
+
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 240px
+}
+
+.memberIcon {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.memberTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.memberSubtitle {
+  color: #808080;
+  width: 100%;    
+  min-height: 120px; 
+  font-size: 16px;
+  line-height: 1.5;
+}
