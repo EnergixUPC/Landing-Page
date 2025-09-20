@@ -298,3 +298,131 @@ nav {
   cursor: pointer;
   font-size: 20px;
 }
+
+/* SUBSCRIPCIONES */
+#suscripciones {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.suscripcionesTitleContainer {
+    margin-bottom: 50px;
+}
+
+.suscripcionesTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2a4b;
+    margin-bottom: 10px;
+}
+
+.suscripcionesSubtitle {
+    font-size: 18px;
+    color: #555;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.pricing-card {
+    background-color: #e1f5fe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.premium-card {
+    border-color: #0d47a1;
+}
+
+.tag {
+    position: absolute;
+    top: -15px;
+    background-color: #0d47a1;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2a4b;
+    margin-bottom: 5px;
+}
+
+.plan-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-top: 0;
+}
+
+.plan-price {
+    margin: 20px 0;
+    color: #0d47a1;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.period {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.plan-features li {
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 16px;
+}
+
+.plan-features .check-icon {
+    color: #02a9f4;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.pricing-card .button:hover {
+    background-color: #015e91;
+}
+
+/* Para que el botón se extienda por completo */
+.pricing-card .button {
+    margin-top: auto;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+}
