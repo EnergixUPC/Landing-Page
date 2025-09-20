@@ -402,3 +402,44 @@
         </footer>
         </div>
     </section>
+
+    <script src="product.js"></script>
+    <script src="i18n.js"></script>
+    <script src="faq.js"></script>
+    <script src="mobile-menu.js"></script>
+
+    <div id="paymentModal" class="modal">
+      <div class="modalContent">
+        <h2>Opciones de Pago</h2>
+        <form>
+          <div class="paymentOption">
+            <input type="radio" id="creditCard" name="payment" checked>
+            <label for="creditCard">Tarjeta de crédito</label>
+            <div class="cardLogos">
+              <img src="img/Visa.png" alt="Visa">
+              <img src="img/MasterCard.png" alt="MasterCard">
+              <img src="img/American-Express.png" alt="American Express">
+            </div>
+            <div class="cardDetails">
+              <input type="text" placeholder="Número de tarjeta">
+              <input type="text" placeholder="Nombre del titular">
+              <input type="text" placeholder="Fecha de vencimiento (MM/AA)">
+              <input type="text" placeholder="Código de seguridad">
+            </div>
+          </div>
+          <div class="paymentOption">
+            <input type="radio" id="paypal" name="payment">
+            <label for="paypal">PayPal</label>
+            <div class="cardLogos">
+              <img src="img/PayPal.png" alt="PayPal">
+            </div>
+          </div>
+          <button type="button" id="closePayment">Cerrar</button>
+          <button type="submit">Pagar</button>
+        </form>
+      </div>
+    </div>
+    
+    <script src="payment.js"></script>
+  </body>
+</html>
