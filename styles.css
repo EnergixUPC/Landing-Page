@@ -831,3 +831,378 @@ button {
   color: #fff;
   cursor: pointer;
 }
+
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+@media (max-width: 1200px) {
+    .productImgBox {
+        width: 400px;
+        height: 450px;
+        left: 10%;
+    }
+
+    .productDetails {
+        width: 45%;
+        padding: 40px;
+    }
+
+    .productTitle {
+        font-size: 60px;
+    }
+
+    .teamMembers {
+        gap: 120px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 15px 30px;
+    }
+
+    .langSwitch, .login {
+        font-size: 18px;
+    }
+
+    .langSwitch {
+        left: 30px;
+    }
+
+    .login {
+        right: 30px;
+    }
+
+    .menuItem {
+        margin-right: 30px;
+        font-size: 15px;
+    }
+
+    .backgroundItem {
+        height: 700px;
+    }
+
+    .productImgBox {
+        width: 350px;
+        height: 400px;
+        left: 5%;
+    }
+
+    .productDetails {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .productTitle {
+        font-size: 50px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .pricing-card {
+        padding: 30px;
+    }
+
+    .teamMembers {
+        gap: 80px;
+        flex-wrap: wrap;
+    }
+
+    .footerLeft {
+        padding: 40px;
+    }
+
+    .footerRight {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menuItems {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 60px;
+        flex-direction: column;
+        background-color: #1976d2;
+        width: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menuItems.active {
+        height: auto;
+        padding: 20px 0;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menuItem {
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+    .langSwitch, .login {
+        font-size: 16px;
+    }
+
+    .langSwitch {
+        left: 20px;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .backgroundItem {
+        height: 600px;
+    }
+
+    .backgroundBg {
+        width: 400px;
+        height: 400px;
+    }
+
+    .logo {
+        width: 600px;
+    }
+
+    .productImgBox {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .product {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productDetails {
+        position: relative;
+        width: 90%;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .productTitle {
+        font-size: 40px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .pricing-card {
+        margin-bottom: 30px;
+    }
+
+    .mvvGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .teamMembers {
+        gap: 50px;
+    }
+
+    .member {
+        width: 200px;
+    }
+
+    .memberSubtitle {
+        min-height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footerLeft {
+        flex-direction: column;
+    }
+
+    .fMenuList {
+        margin-bottom: 30px;
+    }
+
+    .modalContent {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBottom {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .langSwitch {
+        position: absolute;
+        left: 20px;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    .langSwitch button, .login button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .menuItem {
+        margin: 12px 0;
+        font-size: 16px;
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+    .backgroundItem {
+        height: 500px;
+    }
+
+    .backgroundBg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .logo {
+        width: 400px;
+    }
+
+    .button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .beneficiosGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .productImg {
+        width: 70%;
+    }
+
+    .productTitle {
+        font-size: 32px;
+    }
+
+    .productDesc, .productPrice {
+        font-size: 18px;
+    }
+
+    .buyButton {
+        padding: 8px 15px;
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    .prodcutButton {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .button.buyButton, button#comprar {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .mvvVideosContainer iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .teamMembers {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .member {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .faqTitle {
+        font-size: 28px;
+    }
+
+    .faqQuestion h3 {
+        font-size: 16px;
+    }
+
+    .faqAnswer p {
+        font-size: 14px;
+    }
+
+    .footerLeft, .footerRight {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .backgroundBg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .logo {
+        width: 320px;
+    }
+
+    .productImgBox {
+        width: 250px;
+        height: 280px;
+    }
+
+    .productTitle {
+        font-size: 28px;
+    }
+
+    .pricing-card {
+        padding: 20px;
+    }
+
+    .price {
+        font-size: 36px;
+    }
+
+    .button.buyButton, button#comprar {
+        width: 90%;
+    }
+
+    .modalContent {
+        padding: 15px;
+    }
+}
