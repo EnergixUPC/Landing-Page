@@ -589,7 +589,7 @@ nav {
 .memberIcon {
   width: 100px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .memberTitle {
