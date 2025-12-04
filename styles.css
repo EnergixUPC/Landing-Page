@@ -278,12 +278,12 @@ nav {
   color: rgb(255, 255, 255) ;
 }
 .productPrice {
-  font-style: 24px;
+  font-size: 24px;
   color: rgb(255, 255, 255);
 }
 
 .productDesc {
-  font-style: 24px;
+  font-size: 24px;
   color: rgb(255, 255, 255);
 }
 
@@ -968,8 +968,16 @@ button {
         left: 20px;
     }
 
+
     .login {
-        display: none;
+        display: block;
+        position: absolute;
+
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        z-index: 1001;
     }
 
     .backgroundItem {
