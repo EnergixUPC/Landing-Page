@@ -49,10 +49,10 @@ function setGenericListTexts(texts = []) {
 
 // Traducciones actualizadas
 const nav_en = [
-  'Home', 'Benefits', 'Products', 'Subscriptions', 'Our Team', 'FAQ', 'Sign In'
+  'Home', 'Benefits', 'Products', 'Subscriptions', 'Our Team', 'FAQ', 'Try Now', 'Sign In'
 ];
 const nav_es = [
-  'Inicio', 'Beneficios', 'Productos', 'Suscripciones', 'Nuestro Equipo', 'FAQ', 'Iniciar Sesión'
+  'Inicio', 'Beneficios', 'Productos', 'Suscripciones', 'Nuestro Equipo', 'FAQ', 'Probar ahora', 'Iniciar Sesión'
 ];
 
 const beneficiosTitle_en = 'Why Choose Energix?';
@@ -342,6 +342,10 @@ const faq_en = [
   {
     q: 'Do you offer plans for businesses or only for homes?',
     a: 'Currently, our products and services are designed for home users. We are working on larger solutions for the future.'
+  },
+  {
+    q: 'Can I try Energix without buying hardware?',
+    a: 'Yes. The "Try Now" button gives you access to an interactive demo with simulated consumption data, with no device installation or sign-up required, so you can explore the platform before deciding.'
   }
 ];
 
@@ -361,6 +365,10 @@ const faq_es = [
   {
     q: '¿Ofrecen planes para empresas o solo para hogares?',
     a: 'Actualmente, nuestros productos y servicios están diseñados para usuarios domésticos. Estamos trabajando en soluciones más grandes para el futuro.'
+  },
+  {
+    q: '¿Puedo probar Energix sin comprar hardware?',
+    a: 'Sí. Con el botón "Probar ahora" accedes a una demo interactiva con datos de consumo simulados, sin necesidad de instalar ningún dispositivo ni registrarte, para que conozcas la plataforma antes de decidir.'
   }
 ];
 
@@ -431,7 +439,8 @@ if (translateBtn) {
         // NAV
         const navItems = qa('.menuItem a');
         navItems.forEach((a, i) => { if (nav_en[i]) a.textContent = nav_en[i]; });
-        if (q('.login .button')) q('.login .button').textContent = nav_en[6];
+        if (q('.navActions .buttonDemo')) q('.navActions .buttonDemo').textContent = nav_en[6];
+        if (q('.navActions .button:not(.buttonDemo)')) q('.navActions .button:not(.buttonDemo)').textContent = nav_en[7];
 
         // HERO
         if (q('.backgroundTitle')) safeSetHTML('.backgroundTitle', hero_en);
@@ -533,7 +542,8 @@ if (translateBtn) {
         // NAV
         const navItems = qa('.menuItem a');
         navItems.forEach((a, i) => { if (nav_es[i]) a.textContent = nav_es[i]; });
-        if (q('.login .button')) q('.login .button').textContent = nav_es[6];
+        if (q('.navActions .buttonDemo')) q('.navActions .buttonDemo').textContent = nav_es[6];
+        if (q('.navActions .button:not(.buttonDemo)')) q('.navActions .button:not(.buttonDemo)').textContent = nav_es[7];
 
         // HERO
         if (q('.backgroundTitle')) safeSetHTML('.backgroundTitle', hero_es);

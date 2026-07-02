@@ -39,13 +39,31 @@ nav {
   align-items: center;
 }
 
-.login {
+.navActions {
   position: absolute;
   right: 60px;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-size: 20px;
-  cursor: pointer;
+}
+
+.buttonDemo {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 13px 28px;
+}
+
+.buttonDemo:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.menuItemDemo {
+  display: none;
 }
 
 .langSwitch {
@@ -859,7 +877,7 @@ button {
         padding: 15px 30px;
     }
 
-    .langSwitch, .login {
+    .langSwitch, .navActions {
         font-size: 18px;
     }
 
@@ -867,8 +885,9 @@ button {
         left: 30px;
     }
 
-    .login {
+    .navActions {
         right: 30px;
+        gap: 12px;
     }
 
     .menuItem {
@@ -960,7 +979,7 @@ button {
         font-size: 16px;
     }
 
-    .langSwitch, .login {
+    .langSwitch, .navActions {
         font-size: 16px;
     }
 
@@ -969,8 +988,8 @@ button {
     }
 
 
-    .login {
-        display: block;
+    .navActions {
+        display: flex;
         position: absolute;
 
         right: 70px;
@@ -978,6 +997,16 @@ button {
         transform: translateY(-50%);
         font-size: 16px;
         z-index: 1001;
+    }
+
+    /* La versión de barra pierde espacio en pantallas chicas: se oculta el botón
+       "Probar ahora" del navActions y se ofrece en su lugar dentro del menú hamburguesa. */
+    .buttonDemo {
+        display: none;
+    }
+
+    .menuItemDemo {
+        display: block;
     }
 
     .backgroundItem {
@@ -1080,7 +1109,7 @@ button {
         margin: 0;
     }
 
-    .langSwitch button, .login button {
+    .langSwitch button, .navActions .button {
         padding: 8px 20px;
         font-size: 14px;
     }
