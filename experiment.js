@@ -8,7 +8,7 @@
   var API_BASE = 'https://backend-latest-rplh.onrender.com';
   // Frontend de esta rama: 'https://energixemsapp.vercel.app' en main (producción),
   // 'https://energix-frontend-test.vercel.app' en develop (test).
-  var FRONTEND_BASE = 'https://energix-frontend-test.vercel.app';
+  var FRONTEND_BASE = 'https://energixemsapp.vercel.app';
   var EXPERIMENT_KEY = 'demo-onboarding';
   var VISITOR_ID_KEY = 'sems_experiment_visitor_id';
   var VARIANT_CACHE_KEY = 'sems_experiment_variant_' + EXPERIMENT_KEY;
