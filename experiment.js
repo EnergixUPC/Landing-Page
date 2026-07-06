@@ -14,7 +14,7 @@
 
   // 'production' en la rama main, 'test' en develop — ver
   // Backend/docs/superpowers/specs/2026-07-05-branch-variant-deployment-design.md
-  var DEPLOYMENT_ENV = 'test';
+  var DEPLOYMENT_ENV = 'production';
 
   var controlLabel = { es: 'Crear cuenta', en: 'Create Account' };
   var demoLabel = { es: 'Probar ahora', en: 'Try Now' };
