@@ -4,10 +4,11 @@
 // comportamiento actual ("Probar ahora" -> /demo); variante A (control) apunta directo a
 // /register, sin pasar por la demo.
 (function () {
-  // IMPORTANTE: debe apuntar al mismo backend que consume el Frontend en producción
-  // (ver Frontend/src/environments/environment.prod.ts -> apiUrl).
-  var API_BASE = 'http://localhost:8080';
-  var FRONTEND_BASE = 'https://energixemsapp.vercel.app';
+  // Backend compartido (mismo valor en main y develop, ver Frontend/src/environments/environment.prod.ts -> apiUrl).
+  var API_BASE = 'https://backend-latest-rplh.onrender.com';
+  // Frontend de esta rama: 'https://energixemsapp.vercel.app' en main (producción),
+  // 'https://energix-frontend-test.vercel.app' en develop (test).
+  var FRONTEND_BASE = 'https://energix-frontend-test.vercel.app';
   var EXPERIMENT_KEY = 'demo-onboarding';
   var VISITOR_ID_KEY = 'sems_experiment_visitor_id';
   var VARIANT_CACHE_KEY = 'sems_experiment_variant_' + EXPERIMENT_KEY;
