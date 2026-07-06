@@ -12,6 +12,10 @@
   var VISITOR_ID_KEY = 'sems_experiment_visitor_id';
   var VARIANT_CACHE_KEY = 'sems_experiment_variant_' + EXPERIMENT_KEY;
 
+  // 'production' en la rama main, 'test' en develop — ver
+  // Backend/docs/superpowers/specs/2026-07-05-branch-variant-deployment-design.md
+  var DEPLOYMENT_ENV = 'test';
+
   var controlLabel = { es: 'Crear cuenta', en: 'Create Account' };
   var demoLabel = { es: 'Probar ahora', en: 'Try Now' };
   var currentLang = 'es';
@@ -83,7 +87,7 @@
   fetch(API_BASE + '/api/v1/experiments/' + EXPERIMENT_KEY + '/assignment', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ subjectId: getVisitorId() })
+    body: JSON.stringify({ subjectId: getVisitorId(), deploymentEnv: DEPLOYMENT_ENV })
   })
     .then(function (res) { return res.json(); })
     .then(function (data) {
